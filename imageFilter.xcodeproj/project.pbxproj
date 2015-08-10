@@ -14,6 +14,7 @@
 		7F6EB78D1B7839F100DB0799 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F6EB78C1B7839F100DB0799 /* Images.xcassets */; };
 		7F6EB7901B7839F100DB0799 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6EB78E1B7839F100DB0799 /* LaunchScreen.xib */; };
 		7F6EB79C1B7839F100DB0799 /* imageFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6EB79B1B7839F100DB0799 /* imageFilterTests.m */; };
+		7F6EB7A81B783A2700DB0799 /* UIImage+filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6EB7A61B783A2700DB0799 /* UIImage+filter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		7F6EB7951B7839F100DB0799 /* imageFilterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imageFilterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F6EB79A1B7839F100DB0799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F6EB79B1B7839F100DB0799 /* imageFilterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imageFilterTests.m; sourceTree = "<group>"; };
+		7F6EB7A61B783A2700DB0799 /* UIImage+filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+filter.m"; sourceTree = "<group>"; };
+		7F6EB7A71B783A2700DB0799 /* UIImage+filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+filter.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		7F6EB77E1B7839F100DB0799 /* imageFilter */ = {
 			isa = PBXGroup;
 			children = (
+				7F6EB7A51B783A0F00DB0799 /* HQImageFilter */,
 				7F6EB7831B7839F100DB0799 /* AppDelegate.h */,
 				7F6EB7841B7839F100DB0799 /* AppDelegate.m */,
 				7F6EB7861B7839F100DB0799 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				7F6EB79A1B7839F100DB0799 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F6EB7A51B783A0F00DB0799 /* HQImageFilter */ = {
+			isa = PBXGroup;
+			children = (
+				7F6EB7A61B783A2700DB0799 /* UIImage+filter.m */,
+				7F6EB7A71B783A2700DB0799 /* UIImage+filter.h */,
+			);
+			path = HQImageFilter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F6EB7881B7839F100DB0799 /* ViewController.m in Sources */,
+				7F6EB7A81B783A2700DB0799 /* UIImage+filter.m in Sources */,
 				7F6EB7851B7839F100DB0799 /* AppDelegate.m in Sources */,
 				7F6EB7821B7839F100DB0799 /* main.m in Sources */,
 			);
